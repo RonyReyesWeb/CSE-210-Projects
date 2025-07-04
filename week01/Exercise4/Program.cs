@@ -34,7 +34,26 @@ class Program
             sum += num;
         }
 
+        // STEP 2: Compute the average of the numbers in the list.
+        float average = 0;
+
+        if (numbers.Count > 0)
+        {
+            average = (float)sum / numbers.Count;
+        }
+
+        // Find the maximum number
+        int max = int.MinValue;
+        foreach (int num in numbers)
+        {
+            if (num > max)
+            {
+                max = num;
+            }
+        }
+
         // Show the result from the results
         Console.WriteLine($"The sum is: {sum}");
+        Console.WriteLine($"The average is: {average}");
     }
 }
