@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        //Step 1 no loop
+        //Step 2 LOOP ON
 
         // Ask user for the magic number
         Console.Write("What is the magic number? ");
@@ -16,19 +16,23 @@ class Program
 
 
         // Compare guess to magic number and print response
-        if (guess < magicNumber)
+        while (guess != magicNumber)
         {
-            Console.WriteLine("Higher");
-        }
-        else if (guess > magicNumber)
-        {
-            Console.WriteLine("Lower");
-        }
-        else
-        {
-        //testing the result
-            Console.WriteLine("You guessed it!");
-        }
+            if (guess < magicNumber)
+            {
+                Console.WriteLine("Higher");
+            }
+            // guess > magicNumber
+            else
+            {
+                Console.WriteLine("Lower");
+            }
 
+            // Ask for another guess
+            Console.Write("What is your guess? ");
+            guess = int.Parse(Console.ReadLine());
+        }
+        // When guess equals magic number
+        Console.WriteLine("You guessed it!");
     }
 }
