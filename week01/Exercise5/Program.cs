@@ -34,4 +34,11 @@ class Program
         int number = int.Parse(input);
         return number;
     }
+
+    // Function 4: Square the given number and return the result
+    static int SquareNumber(int number)
+    {
+        return number * number;
+    }
+    
 }
