@@ -4,13 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-
         // Call each function in order and pass/receive data between them
         DisplayWelcome();
+
         string userName = PromptUserName();
         int favoriteNumber = PromptUserNumber();
 
+        int squaredNumber = SquareNumber(favoriteNumber);
 
+        DisplayResult(userName, squaredNumber);
     }
 
     // Function 1: Display a welcome message
