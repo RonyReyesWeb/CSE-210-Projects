@@ -42,7 +42,7 @@ class Program
             average = (float)sum / numbers.Count;
         }
 
-        // Find the maximum number
+        // STEP 2: Find the maximum number
         int max = int.MinValue;
         foreach (int num in numbers)
         {
@@ -55,5 +55,7 @@ class Program
         // Show the result from the results
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
+        Console.WriteLine($"The largest number is: {max}");
+
     }
 }
