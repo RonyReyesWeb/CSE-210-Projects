@@ -10,8 +10,14 @@ class Program
         // Read the input from the user as a string
         string input = Console.ReadLine();
 
+        // Convert the input string to an integer grade
+        int grade = int.Parse(input);
+
+        // Declare a variable to hold the letter grade
+        string letter;
+
         //testing the results
-        Console.WriteLine("You entered: " + input);
+        Console.WriteLine("You entered: " + grade);
 
 
     }
