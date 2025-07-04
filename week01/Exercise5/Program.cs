@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Exercise5 Project.");
+        //Testing exercise 5 of the week
+        Console.WriteLine("Hello Rony");
     }
 }
