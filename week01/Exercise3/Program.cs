@@ -4,11 +4,13 @@ class Program
 {
     static void Main()
     {
-        //Step 2 LOOP ON
+        //Step 3 *FINAL STEP
 
-        // Ask user for the magic number
-        Console.Write("What is the magic number? ");
-        int magicNumber = int.Parse(Console.ReadLine());
+        //Implementation of randomegenerator 
+        Random randomGenerator = new Random();
+
+        // Generate random magic number from 1 to 100
+        int magicNumber = randomGenerator.Next(1, 101);
 
         // Ask for the user's guess
         Console.Write("What is your guess? ");
