@@ -14,10 +14,23 @@ class Program
         Console.Write("What is your guess? ");
         int guess = int.Parse(Console.ReadLine());
 
-        //testing the result
-        Console.WriteLine($"Your magic number is: {magicNumber}");
-        Console.WriteLine($"Your guess is: {guess}");
 
+        // Compare guess to magic number and print response
+        if (guess < magicNumber)
+        {
+            Console.WriteLine("Higher");
+        }
+        else if (guess > magicNumber)
+        {
+            Console.WriteLine("Lower");
+        }
+        else
+        {
+            //testing the result
+            Console.WriteLine($"Your magic number is: {magicNumber}");
+            Console.WriteLine($"Your guess is: {guess}");
+            Console.WriteLine("You guessed it!");
+        }
 
     }
 }
