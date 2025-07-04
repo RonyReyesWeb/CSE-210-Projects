@@ -2,8 +2,16 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello World! This is the Exercise3 Project.");
+        //Step 1 no loop
+        
+        // Ask user for the magic number
+        Console.Write("What is the magic number? ");
+        int magicNumber = int.Parse(Console.ReadLine());
+
+        //testing the result
+        Console.WriteLine($"Your letter grade is: {magicNumber}");
+
     }
 }
