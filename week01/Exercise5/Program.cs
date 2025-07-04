@@ -40,5 +40,10 @@ class Program
     {
         return number * number;
     }
-    
+
+    // Function 5: Display the final message using user's name and squared number
+    static void DisplayResult(string name, int squaredNumber)
+    {
+        Console.WriteLine($"{name}, the square of your number is {squaredNumber}");
+    }
 }
