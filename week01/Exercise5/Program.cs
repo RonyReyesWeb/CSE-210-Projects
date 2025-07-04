@@ -34,5 +34,4 @@ class Program
         int number = int.Parse(input);
         return number;
     }
-
 }
