@@ -15,8 +15,8 @@ class Program
         int guess = int.Parse(Console.ReadLine());
 
         //testing the result
-        Console.WriteLine($"Your letter grade is: {magicNumber}");
-        Console.WriteLine($"Your letter grade is: {guess}");
+        Console.WriteLine($"Your magic number is: {magicNumber}");
+        Console.WriteLine($"Your guess is: {guess}");
 
 
     }
