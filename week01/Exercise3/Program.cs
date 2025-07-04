@@ -26,9 +26,7 @@ class Program
         }
         else
         {
-            //testing the result
-            Console.WriteLine($"Your magic number is: {magicNumber}");
-            Console.WriteLine($"Your guess is: {guess}");
+        //testing the result
             Console.WriteLine("You guessed it!");
         }
 
