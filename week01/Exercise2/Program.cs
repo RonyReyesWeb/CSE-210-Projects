@@ -2,9 +2,13 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        //test week 1 exercise 1 pushing
-        Console.WriteLine("Hello World! This is the Exercise2 Project.");
+        // Prompt the user to enter their grade percentage
+        Console.Write("Enter your grade percentage: ");
+        
+        // Read the input from the user as a string
+        string input = Console.ReadLine();
+
     }
 }
