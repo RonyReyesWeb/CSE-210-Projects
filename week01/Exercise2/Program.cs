@@ -39,8 +39,19 @@ class Program
         }
 
         //testing the results
-        Console.WriteLine("You entered: " + grade);
-        Console.WriteLine("Your letter grade is: " + letter);
+        Console.WriteLine($"Your letter grade is: {letter}");
+
+        // Check if the user passed (70 or above)
+        if (grade >= 70)
+        {
+            // Congratulate the user if they passed
+            Console.WriteLine("Congratulations, you passed!");
+        }
+        else
+        {
+            // Encourage the user to try again if they did not pass
+            Console.WriteLine("Keep trying! You can do better next time.");
+        }
 
     }
 }
