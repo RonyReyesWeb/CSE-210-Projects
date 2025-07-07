@@ -1,6 +1,6 @@
 using System;
 
-// Step 1 Create Job class with member variables
+// Create Job file
 public class Job
 {
     public string _jobTitle = "";
