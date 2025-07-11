@@ -31,14 +31,38 @@ public class Journal
     }
 
     public void LoadFromFile(string filename)
+{
+    if (!File.Exists(filename))
     {
-        _entries.Clear();
+        Console.WriteLine($"Error: The file \"{filename}\" does not exist. Please try again.");
+        return; // bounce back, do not continue if the file is not there
+    }
+
+    try
+    {
         string[] lines = File.ReadAllLines(filename);
+        _entries.Clear();
 
         foreach (string line in lines)
         {
-            Entry entry = Entry.FromFileString(line);
-            _entries.Add(entry);
+            string[] parts = line.Split("|");
+            if (parts.Length == 3)
+            {
+                Entry entry = new Entry(parts[0], parts[1], parts[2]);
+                _entries.Add(entry);
+            }
+            else
+            {
+                Console.WriteLine("Warning: Skipped malformed line.");
+            }
         }
+
+        Console.WriteLine("Journal loaded successfully.");
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred while loading the file: {ex.Message}");
+    }
+}
+
 }
