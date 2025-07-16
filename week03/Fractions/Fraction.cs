@@ -44,4 +44,16 @@ public class Fraction
         _bottom = bottom;
     }
 
+    // STEP 6 METHOS OF REPRESENTATIONS
+    public string GetFractionString()
+    {
+        return $"{_top}/{_bottom}";
+    }
+
+    public double GetDecimalValue()
+    {
+        return (double)_top / _bottom;
+    }
+
+
 }
