@@ -1,16 +1,28 @@
 using System;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.AccessControl;
 
 class Product
 {
-    public string Name { get; set; }
-    public string _product { get; set; }
-    public int Id { get; set; }
-    public decimal Price { get; set; }
-    public int Quantity { get; set; }
+    private string _name;
+    private string _id;
+    private double _price;
+    private int _quantity;
 
-    public void Cost(int Total_Cost)
+    public Product(string name, string id, double price, int quantity)
     {
-        // Total_Cost = Price  * Quantity 
+        _name = name;
+        _id = id;
+        _price = price;
+        _quantity = quantity;
     }
+
+    public double GetTotalCost()
+    {
+        return _price * _quantity;
+    }
+
+    public string GetName() => _name;
+    public void SetName(string value) => _name = value;
+
 }
