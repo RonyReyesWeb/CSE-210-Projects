@@ -1,9 +1,16 @@
 using System;
+using System.Reflection.Metadata.Ecma335;
 
 class Product
 {
-    static void Main(string[] args)
+    public string Name { get; set; }
+    public string _product { get; set; }
+    public int Id { get; set; }
+    public decimal Price { get; set; }
+    public int Quantity { get; set; }
+
+    public void Cost(int Total_Cost)
     {
-        Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
+        // Total_Cost = Price  * Quantity 
     }
 }

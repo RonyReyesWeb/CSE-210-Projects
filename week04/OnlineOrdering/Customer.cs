@@ -2,8 +2,14 @@ using System;
 
 class Customer
 {
-    static void Main(string[] args)
+    public string Name { get; set; }
+
+    public void Address()
     {
-        Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
+
     }
+    
+    // calling the method I have not created yet
+    // public void IsUsa(country is country)
+
 }
