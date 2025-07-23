@@ -30,7 +30,7 @@ class Address
         return _country != null && _country.Trim().ToUpper() == "USA";
     }
     
-        // Optional: Add public getters/setters if needed elsewhere
+    //Add public getters/setters as example for my own reference
     public string GetStreet() => _street;
     public void SetStreet(string value) => _street = value;
 

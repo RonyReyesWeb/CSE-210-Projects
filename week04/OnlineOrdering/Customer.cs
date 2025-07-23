@@ -2,7 +2,7 @@ using System;
 
 class Customer
 {
-    public string Name { get; set; }
+    private string _name { get; set; }
 
     public void Address()
     {
