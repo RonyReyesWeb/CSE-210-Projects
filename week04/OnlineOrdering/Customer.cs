@@ -2,14 +2,13 @@ using System;
 
 class Customer
 {
-    private string _name { get; set; }
+    private string _name;
 
-    public void Address()
+    private Address _address;
+
+    public bool IsInUSA()
     {
-
+        return _address.IsInUSA();
     }
-    
-    // calling the method I have not created yet
-    // public void IsUsa(country is country)
 
 }
