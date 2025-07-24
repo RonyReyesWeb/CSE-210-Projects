@@ -22,7 +22,11 @@ class Product
         return _price * _quantity;
     }
 
+    public string GetPackingLabel()
+    {
+        return $"{_name} (ID: {_id})";
+    }
+
     public string GetName() => _name;
     public void SetName(string value) => _name = value;
-
 }
