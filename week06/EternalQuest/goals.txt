@@ -1,0 +1,4 @@
+0
+SimpleGoal|rony|test|10|False
+EternalGoal|ronyeternal|eternalrony|20
+ChecklistGoal|juan|pedro|30|30|0|34
