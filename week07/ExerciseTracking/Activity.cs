@@ -14,7 +14,6 @@ public abstract class Activity
     public DateTime Date => _date;
     public int Minutes => _minutes;
 
-    // Abstract methods to override
     public abstract double GetDistance(); // in km
     public abstract double GetSpeed();    // in kph
     public abstract double GetPace();     // in min/km
